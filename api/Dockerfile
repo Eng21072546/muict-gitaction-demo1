@@ -9,7 +9,7 @@ COPY requirements.txt .
 
 # Install the Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
-RUN pip install fastapi uvicorn
+# RUN pip install fastapi uvicorn
 
 # Copy the entire FastAPI app into the working directory
 COPY . .
